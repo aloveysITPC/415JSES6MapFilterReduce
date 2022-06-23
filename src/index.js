@@ -33,13 +33,26 @@ console.log(newNumber);
 
 //Filter - Create a new array by keeping the items that return true.
 
-//Reduce - Accumulate a value by doing something to each item in an array.
-
-//Find - find the first item that matches from an array.
-
 //FindIndex - find the index of the first item that matches.
 const bigNumbers = numbers.filter(function (num) {
   return num > 10;
 });
 
 console.log(bigNumbers);
+
+//Reduce - Accumulate a value by doing something to each item in an array.
+
+var addNumber = 0;
+numbers.forEach(function (currentNumber) {
+  addNumber += currentNumber;
+});
+console.log(addNumber);
+
+// to simplify
+
+var aNumber = numbers.reduce(function (accumulator, aNumber) {
+  return accumulator + aNumber;
+});
+console.log(aNumber);
+
+//Find - find the first item that matches from an array.
