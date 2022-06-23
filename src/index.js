@@ -55,4 +55,15 @@ var aNumber = numbers.reduce(function (accumulator, aNumber) {
 });
 console.log(aNumber);
 
-//Find - find the first item that matches from an array.
+//Find - find the first item that matches from an array then stop
+const findNum = numbers.find(function (num) {
+  return num > 10;
+});
+
+console.log(findNum);
+
+const findNumIndex = numbers.findIndex(function (num) {
+  return num > 10;
+});
+//  returns position in array
+console.log(findNumIndex);
